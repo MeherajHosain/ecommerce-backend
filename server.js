@@ -15,6 +15,8 @@ app.use(cors()); // অন্য পোর্ট বা ডোমেইন থ�
 app.use('/api/auth', require('./routes/authRoutes'));
 // Product Route (নতুন যোগ করুন)
 app.use('/api/products', require('./routes/productRoutes'));
+// Cart Route (নতুন যোগ করুন)
+app.use('/api/cart', require('./routes/cartRoutes'));
 
 // ডেটাবেজ কানেক্ট করা
 connectDB();
