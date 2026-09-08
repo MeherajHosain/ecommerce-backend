@@ -17,6 +17,9 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
 // Cart Route (নতুন যোগ করুন)
 app.use('/api/cart', require('./routes/cartRoutes'));
+// Order Route (নতুন যোগ করুন)
+app.use('/api/orders', require('./routes/orderRoutes'));
+
 
 // ডেটাবেজ কানেক্ট করা
 connectDB();
